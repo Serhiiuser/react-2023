@@ -1,7 +1,8 @@
 import './App.css';
 
 import React from 'react';
-import Simpson from "./components/Simpsons/Simpson";
+import Simpson from "./components/Simpson/Simpson";
+import Characters from "./components/Characters/Characters";
 
 const App = () => {
   return (
@@ -11,7 +12,18 @@ const App = () => {
         <Simpson name = {'Bart'} surname = {'Simpson'} image = {'https://2x2tv.ru/upload/iblock/aad/aadc5d77ab52efcc921f3e1a257e11ec.jpg'}/>
         <Simpson name = {'Lisa'} surname = {'Simpson'} image = {'https://cdn.costumewall.com/wp-content/uploads/2015/09/lisa-simpson.jpg'}/>
         <Simpson name = {'Maggi'} surname = {'Simpson'} image = {'https://ru.seaicons.com/wp-content/uploads/2015/07/Maggie-Simpson-icon.png'}/>
+
+
+          <Characters name = {'Rick Sanchez'} status = {'"Alive"'} species={"Human"} gender={'Male'} image = {'https://rickandmortyapi.com/api/character/avatar/1.jpeg'}/>
+          <Characters name = {' Morty Smith'} status = {'"Alive"'} species={"Human"} gender={'Male'} image = {'https://rickandmortyapi.com/api/character/avatar/2.jpeg'}/>
+          <Characters name = {'Summer Smith'} status = {'"Alive"'} species={"Human"} gender={'Female'} image = {'https://rickandmortyapi.com/api/character/avatar/3.jpeg'}/>
+          <Characters name = {'Beth Smith'} status = {'"Alive"'} species ={"Human"} gender={'Female'}image = {'https://rickandmortyapi.com/api/character/avatar/4.jpe'}/>
+          <Characters name = {'Jerry Smith'} status = {'"Alive"'} species={"Human"} gender={'Male'} image = {'https://rickandmortyapi.com/api/character/avatar/5.jpeg'}/>
+          <Characters name = {'Abadango Cluster Princess'} status = {'"Alive"'} species={"Alien"} gender={'Female'} image = {'https://rickandmortyapi.com/api/character/avatar/6.jpeg'}/>
+
       </div>
+
+
   );
 };
 
