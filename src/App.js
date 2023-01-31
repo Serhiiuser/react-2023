@@ -1,11 +1,12 @@
 import './App.css';
 
 import React, {useEffect, useState} from 'react';
+import {getLaunches} from "./api/getLaunches";
 
 const App = () => {
     const [launches, setLaunches] = useState([]);
-    useEffect(()=>{
-        fetch('https://api.spacexdata.com/v3/launches/').then(resp => resp.json()).then(resp => setLaunches(resp))
+    useEffect(() => {
+        getLaunches().then(resp => setLaunches(resp))
     },[]);
 
   return (
